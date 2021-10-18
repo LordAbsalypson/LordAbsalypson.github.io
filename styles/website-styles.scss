@@ -1,0 +1,99 @@
+:root{
+  --font-family: "Olde English";
+  --font-family-headline: "Old English";
+  --font-family-text: "Josefin Sans";
+  --sizeVar: 90vmin;
+}
+
+// fonts
+
+// colors
+$black: #000000;
+$white: #fff;
+$primary: #892CDC;
+$secondary: #52057B;
+$light: #BC6FF1;
+
+// variables
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+// global
+*{
+  color: $white;
+  list-style-type: none;
+}
+html{
+  background: $black;
+
+}
+
+// text
+h1, h2, h3, h4, h5, h6, .jp {
+  font-family: "Olde English";
+  animation: gradient 5s infinite alternate;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle,
+          rgba(63,94,251,1) 3%, rgba(49,220,226,1) 26%,                        rgba(213,42,255,1) 51%, rgba(191,62,212,1) 82%,           rgba(252,70,107,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200%;
+}
+p {
+  font-size: 1.5rem;
+  font-family: var(--font-family-text);
+}
+
+.wrapper{
+  margin: 0 4rem 0 4rem;
+
+}
+
+header {
+  width: 100%;
+  .intro {
+    display: flex;
+    .intro--left {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      .jp{
+        font-size: 25rem;
+        margin: 0;
+      }
+    }
+    .intro--right{
+      align-self: center;
+      width: 50%;
+      height: 20rem;
+    }
+  }
+  .about {}
+  .my-stuff{
+    position: relative;
+  }
+}
+
+
+
+// ipad
+
+.my-stuff{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  h2{
+
+  }
+}
+
+
+
