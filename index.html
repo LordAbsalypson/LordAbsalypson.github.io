@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JP Paar | Home</title>
+    <link rel="stylesheet" href="/assets/fonts/JosefinSans/stylesheet.css">
+    <link rel="stylesheet" href="/assets/fonts/tisk/stylesheet.css">
+    <link rel="preload" href="/assets/fonts/tisk/tisk-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/fonts/oldEnglish/stylesheet.css">
+
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+<div class="wrapper">
+    <menu>
+        <div class="logo"></div>
+        <div class="nav"></div>
+    </menu>
+    <header>
+        <section class="intro">
+            <div class="intro--left">
+                <p class="jp">JP</h>
+            </div>
+            <div class="intro--right">
+                <h1>Hey I'm JP, welcome to my Website! Be my guest ^^</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea eaque voluptate ipsa tenetur velit, aspernatur amet sed pariatur vitae itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos odio, officia saepe deleniti cupiditate ipsum exercitationem non quisquam temporibus sunt consequatur aspernatur vitae earum quod fugiat id quaerat accusamus expedita reprehenderit dolorum! Odio asperiores quos molestias atque veritatis, odit quidem cumque nihil iste dolorem nesciunt illo error. Quas laborum dolor officiis modi odio suscipit, eum porro, ullam, necessitatibus a molestias fuga alias sit. Numquam vel consequuntur fuga autem aut non, obcaecati praesentium? </p>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="about">
+            <div class="about--left">
+                <h2>About Me (JP)</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi cupiditate dolorem mollitia neque
+                    quae quidem suscipit! Adipisci architecto aspernatur aut, dolorem earum eligendi esse est et fugiat in
+                    itaque labore laborum magni maxime nesciunt nulla omnis quam soluta vel.</p>
+            </div>
+            <div class="about--right">
+
+            </div>
+        </section>
+
+        <section class="my-stuff">
+            <h2>Explore my stuff :P</h2>
+            <div class="ipadBox">
+                <button class="powerButton" onclick="powerMe();">I</button>
+                <div class="ipadScreen">
+                    <div class="wallpaper">
+                        <div class="statusBar"></div>
+                        <div class="dockWrapper">
+                            <div class="dockbar">
+                                <div class="iconDiv" onclick="window.barColor='white';iconClick(event);">
+                                    <div class="imgDiv"></div>
+                                </div>
+                                <div class="iconDiv" onclick="window.barColor='white';iconClick(event);">
+                                    <div class="imgDiv"></div>
+                                </div>
+                                <div class="iconDiv" onclick="window.barColor='black';iconClick(event);">
+                                    <div class="imgDiv"></div>
+                                </div>
+                                <div class="iconDivide"></div>
+                                <div class="iconDiv" onclick="window.barColor='black';iconFClick(event);">
+                                    <div class="imgDiv"></div>
+                                </div>
+                                <div class="iconDiv" onclick="window.barColor='white';iconFClick(event);">
+                                    <div class="imgDiv"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lockScreen" onclick="lockClick();">
+                        <div class="lockContent">
+                            <div class="statusBar"></div>
+                            <div class="lockIcon"></div>
+                            <div class="lockTime">9:41<br />Saturday, August 17</div>
+                        </div>
+                        <div class="interactionBar"></div>
+                    </div>
+                    <div class="interactionBar" id="inAppBar" onclick="goHome();"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="socials"></div>
+        <div class="imprint"></div>
+        <div class="illustration"></div>
+    </footer>
+</div>
+
+<script src="/js/main.js"></script>
+<script src="/js/ipad.js"></script>
+
+</body>
+</html>
