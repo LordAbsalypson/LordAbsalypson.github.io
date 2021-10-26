@@ -527,16 +527,25 @@ template {
   }
 }
 * {
-  color: #fff;
+  color: #f0f0ff;
   list-style-type: none;
 }
 
 html {
-  background: #000000;
+  background: #0d0628;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 10%;
 }
 
 h1, h2, h3, h4, h5, h6, .jp {
   font-family: "Olde English";
+  font-size: 3rem;
   animation: gradient 5s infinite alternate;
   background: #3f5efb;
   background: radial-gradient(circle, #3f5efb 3%, #31dce2 26%, #d52aff 51%, #bf3ed4 82%, #fc466b 100%);
@@ -544,14 +553,14 @@ h1, h2, h3, h4, h5, h6, .jp {
   -webkit-text-fill-color: transparent;
   background-size: 200%;
 }
-
-p {
-  font-size: 1.5rem;
-  font-family: var(--font-family-text);
+h1.jp, h2.jp, h3.jp, h4.jp, h5.jp, h6.jp, .jp.jp {
+  font-size: 25rem;
+  margin: 0;
 }
 
-.wrapper {
-  margin: 0 4rem 0 4rem;
+p {
+  font-size: 1.3em;
+  font-family: "tisk", sans-serif;
 }
 
 header {
@@ -566,10 +575,6 @@ header .intro .intro--left {
   justify-content: center;
   position: relative;
 }
-header .intro .intro--left .jp {
-  font-size: 25rem;
-  margin: 0;
-}
 header .intro .intro--right {
   align-self: center;
   width: 50%;
@@ -583,6 +588,9 @@ header .my-stuff {
   position: absolute;
   display: flex;
   flex-direction: column;
+  width: 50%;
+}
+.my-stuff .ipadBox {
   width: 100%;
 }
 
